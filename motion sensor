@@ -1,0 +1,25 @@
+void setup()
+ {
+ pinMode(9, OUTPUT);
+ pinMode(7, INPUT); 
+  
+}
+
+void loop()
+{
+  if(digitalRead(7) == HIGH)
+  {
+    digitalWrite(13, HIGH);
+    tone(9, 1000, 100);
+    delay(1000);
+    tone(9,5, 1000);
+    delay(100);
+    tone(9,10,10);
+    delay(100);
+  }
+  else
+  {
+    digitalWrite(13,LOW);
+  }
+  delay(1);
+}
